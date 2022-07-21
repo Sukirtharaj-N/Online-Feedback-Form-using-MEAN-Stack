@@ -1,0 +1,65 @@
+<form #val="ngForm" (ngSubmit)="submit(val.value)" novalidate>
+  <h2>Feedback Form</h2>
+  <div class="form-group">
+    <pre></pre>
+    <input required minlength="2" maxlength="30" type="text" name="fname" class="form-control" placeholder="Full Name" [(ngModel)]="value.Name" #fname="ngModel">
+    <div  class="error" *ngIf="fname.invalid && (fname.dirty || fname.touched)">
+      <div *ngIf="fname.errors?.required">
+        ** First Name is required
+     </div>
+     <div *ngIf="fname.errors?.minlength">
+       ** First Name Minimum Length is 2**
+     </div>
+   </div>
+  
+    <pre></pre>
+    <input required email type="email" name="email" class="form-control" placeholder="Email" [(ngModel)]="value.Email" #email="ngModel" >
+    <div  class="error" *ngIf="email.invalid && (email.dirty || email.touched)">
+     * Invalid Email (required!!)
+   </div>
+  
+    <pre></pre>
+    <input required minlength="10" maxlength="11" type="tel" pattern="[0-9]*" name="phone" class="form-control" placeholder="Phone Number(+91)" [(ngModel)]="value.Phone" #phone="ngModel" >
+    <div  class="error" *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+      <div *ngIf="phone.errors?.required">
+        ** Phone number is required
+     </div>
+     <div *ngIf="phone.errors?.pattern">
+      ** Invalid, numbers expected!
+   </div>
+     <div *ngIf="phone.errors?.minlength">
+       ** Phone number should have atleast 10 digits**
+     </div>
+   </div>
+    
+    <pre></pre>
+    <select  required name="role" [(ngModel)]="value.Role" #role="ngModel">
+      <option class="opt" value="" disabled selected hidden>Choose your job title</option>
+      <option value="Student">Student</option>
+      <option  value="Teacher">Teacher</option>
+    </select>
+    <div  class="error" *ngIf="role.invalid && role.touched">
+      <div *ngIf="role.errors?.required">
+        ** Job tile is required
+     </div>
+   </div>
+
+    <pre></pre>
+    
+    <textarea required placeholder="Write Something..." [(ngModel)]="value.Content" #feed="ngModel" name="feed" class="form-control1" required minlength="2" maxlength="255"></textarea>
+</div>
+<div  class="error" *ngIf="feed.invalid && feed.touched">
+  <div *ngIf="feed.errors?.required">
+    ** Feed back is required
+ </div>
+ <div *ngIf="feed.errors?.minlength">
+   ** Minimum character is 2**
+ </div>
+</div>
+
+<button type="submit" [disabled]="!val.valid" class="btn btn-default">Submit</button>
+
+</form>
+<footer>
+  <a routerLink="/display">View Feedbacks</a>
+</footer>

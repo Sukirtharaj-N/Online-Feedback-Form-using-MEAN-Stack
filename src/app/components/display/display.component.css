@@ -1,0 +1,109 @@
+.container1
+{
+    background-color:rgb(218, 170, 250);
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+}
+
+
+h2{
+    color:red;
+    text-align:center;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    margin-top: -9px;
+    padding-top:20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    background-color:rgb(218, 170, 250);
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.container2{
+    margin-top: -50px;
+}
+
+.container{
+    padding:20px;
+}
+
+mat-card-content{
+padding-left:57px;
+font-size: 20px;
+padding-top:10px;
+padding-bottom:10px;
+}
+
+.card {
+    width: 600px;
+    border:3px solid rgba(247, 32, 32, 0.849);
+    background-color:rgb(240, 231, 231);
+    align-items:center;
+    margin-left: 27%;
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+  }
+  
+.header-image {
+    background-image: url(src\assets\images.png);
+    background-size: cover;
+  }
+
+.email {
+      height:40px;
+      font-size: 14px;
+  }
+.email span{
+      padding-left:10px;
+      padding-top:10px;
+      position: absolute;
+  }
+
+.email_icon{
+   height:30px;
+   margin-left:25px;
+    margin-bottom:10px;
+    border-radius:15%;
+}
+
+.footer{
+display:inline-flex;
+
+}
+
+.phone{
+    position: absolute;
+    margin-left:75%;
+    font-size: 14px;    
+}
+
+.phone_icon{
+    height:30px;
+        border-radius:15%;     
+}
+
+.phone span{
+    padding-top:10px;
+    padding-left:10px;
+    position:absolute;
+}
+
+.foot{
+    margin-left:20px;    
+   }
+   
+   a{
+     text-decoration:none;
+     color:white;
+     text-shadow: 2px 1px 5px #FF0000;
+   }
+
+   mat-slide-toogle{
+       display: block;
+}
+
+   .toogle{
+       width:130px;
+       padding-left:25px;
+   }

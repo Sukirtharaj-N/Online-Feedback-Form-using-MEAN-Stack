@@ -1,0 +1,13 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+ body{
+    background-image: url(src\assets\helpcenter.jpg);
+    background-repeat:no-repeat;
+    /* background-size: 1368px;
+     */
+     background-size: cover;
+     
+z-index:-10;
+
+  }
+  
+  

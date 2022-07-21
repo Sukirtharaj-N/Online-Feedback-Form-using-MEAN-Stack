@@ -1,0 +1,48 @@
+<div class="container1">
+
+<h2>Feedbacks Got!</h2>
+<div class="container2">
+
+<div class="toogle">
+ <mat-radio-group class="toogle1">
+  <mat-radio-button value=1 [checked]="true" (click)="Displayfeed()">All</mat-radio-button>
+  <pre></pre>
+  <mat-radio-button value=2 (click)="onChange1()">Teacher</mat-radio-button>
+  <pre></pre>
+  <mat-radio-button value=3 (click)="onChange2()">Student</mat-radio-button>
+</mat-radio-group>
+</div>
+<div class="container" *ngFor="let i of values">
+
+  <mat-card class="card" >
+    <mat-card-header>
+      <div mat-card-avatar class="header-image">
+      </div>
+      <mat-card-title>{{i.Name}}</mat-card-title>
+      <mat-card-subtitle>{{i.Role}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{i.Content}}
+      </p>
+    </mat-card-content>
+    <mat-card-footer class="footer">
+      <div class="email">
+      <img class="email_icon" src="../assets/email.png"> 
+      <span>{{i.Email}}</span>
+      </div>
+      <div class="phone">
+      <img class="phone_icon" src="../assets/phone-call.svg"> 
+      <span>{{i.Phone}}</span>
+    </div>
+    
+    </mat-card-footer>
+  </mat-card>
+
+
+</div>
+</div>
+<div class="foot">
+  <a routerLink="">Submit new Feedback </a>
+</div>
+</div>
