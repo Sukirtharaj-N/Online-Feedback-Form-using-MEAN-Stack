@@ -1,3 +1,6 @@
+
+This is a online Feedback form created using MEAN Stack. The form collect feedback from students and teacher in an organization about the corresponding event conducted. Uses Angular routing to view input form and ouput website for organization. In the feedback results page we can filter student and teacher feedback separately.
+
 # Feed
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
